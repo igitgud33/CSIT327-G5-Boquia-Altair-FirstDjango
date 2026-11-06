@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}CampusConnect - Sign Up{% endblock %}
+
+<div>
+    {% block footer%}Copyright by CIT-U{% endblock %}
+</div>
+
+{% block content %}
+<h2>Create your account</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }} <!-- renders the form; implicitly passed by View -->
+    <button type="submit">Sign up</button>
+</form>
+ {% endblock %}
