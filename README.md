@@ -1,7 +1,7 @@
-Name: Altair Genesis C. Boquia
-Section: G5
+**Name**: Altair Genesis C. Boquia
+**Section**: G5
 
-Running the Project:
+**Running the Project:**
 1. Open project folder directory in terminal
 2. Open the virtual environment (.venv) in the terminal
 3. Run the command 'python manage.py runserver'.
