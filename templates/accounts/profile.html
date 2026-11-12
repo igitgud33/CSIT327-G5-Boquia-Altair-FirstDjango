@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+
+{% block title %}CampusConnect - My Profile{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-7 col-lg-6">
+
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+
+                <h2 class="text-center mb-4">My Profile</h2>
+
+                <form method="post">
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+                    <button type="submit"
+                            class="btn btn-primary w-100 mt-3">
+                        Save Changes
+                    </button>
+                </form>
+
+                <p class="text-center mt-3 mb-0">
+                    <a href="{% url 'dashboard' %}">
+                        Back to Dashboard
+                    </a>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
